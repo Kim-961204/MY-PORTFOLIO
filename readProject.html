@@ -1,0 +1,204 @@
+<!--  This landing page has been captured by Landing Page Ripper Chrome extension developed by thelanders.club. If you want to get this lander cleaned, visit thelanders.club -->
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="readProject/style0.css" />
+<link rel="stylesheet" href="readProject/style1.css" />
+<link rel="stylesheet" href="readProject/style2.css" />
+<link rel="stylesheet" href="readProject/style3.css" />
+<script src="readProject/script0.js"></script>
+<script src="readProject/script1.js"></script>
+<link rel="stylesheet" href="readProject/style4.css" />
+<link rel="stylesheet" href="readProject/style5.css" />
+<script src="readProject/script2.js"></script>
+</head>
+<body>
+<!-- 현재 로그인한 사용자 정보를 JavaScript에서 사용하기 위한 hidden input -->
+<input type="hidden" id="currentUserName" value="aaa" />
+
+<div class="all-section">
+	 <div class="container">
+      <div class="head-box">
+      	<h1>
+      		<a class="ml-24" href="home.html">
+      		<img alt="logo" src="home/image0.png" />
+          </a>
+        </h1>
+      </div>
+        <div class="img logo-box">
+          <div class="login-box">
+            <ul class="lgoin-ulbox align-center">
+              <li class="fs-16 fc-8f">
+                <a href="javascript:void(0)" class="notification-icon" style="text-decoration: none;">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="bell-icon" viewBox="0 0 24 24" width="24" height="24">
+                      <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z"/>
+                  </svg>
+                  <span class="notification-badge alarm-icon" data-total="4">4</span>
+                </a>
+              </li>
+            	<li class="fs-16 fc-8f"></li>
+            	<li class="fs-16 fc-8f"></li>
+            	<li class="fs-16 fc-8f"><a href="member.html">회원관리</a></li>
+							<li class="fs-16 fc-8f">
+							<a href="/logout">로그아웃
+							<span class="fs-16">[aaa]</span>
+							</a>
+							</li>          	  
+            	<li class="fs-16 fc-8f"></li>
+            	<li class="fs-16 fc-8f"></li>
+            </ul>
+          </div>
+        </div>
+    	</div>
+    	 <div class="container-low">
+        <nav class="nav-box">
+          <ul>
+          	  <li class="fs-16 menu-box fc-fff"><a href="ptmanage.html">발명승인 관리</a></li>
+          	  
+	          <li class="fs-16 menu-box fc-fff"><a href="ptapplication.html">출원/등록</a></li>
+              <li class="fs-16 menu-box fc-fff"><a href="ptmaintenance.html">특허유지 관리</a></li>
+              <li class="fs-16 menu-box fc-fff"><a href="serch.html">특허 검색</a></li>
+              <li class="fs-16 menu-box fc-fff"><a href="board.html">공지사항</a></li>
+          </ul>
+        </nav>
+         <div class="new-task" onclick="location.href='`writeProject.html'">+ 발명등록</div>
+    	</div>
+    </div>
+	
+	<!-- 알림 팝업 레이어 -->
+	<div id="notification_popup_layer">
+	    <div class="notification_popup_box">
+	        <div style="height: 10px; width: 100%; float: top;">
+	            <a href="javascript:void(0)" class="notification_close_btn">
+             <span class="material-symbols-outlined">close</span>
+	            </a>
+	        </div>
+	        <div class="notification_popup_cont">
+	            <h2>특허만료알림</h2>
+	            <div class="notification-content">
+	                <table class="noti-talbe">
+	                    <thead>
+	                        <tr>
+	                            <th>특허명</th>
+	                            <th>갱신일</th>
+	                            <th>남은기간</th>
+	                            <th>상태</th>
+	                        </tr>
+	                    </thead>
+	                    <tbody>
+	                    
+	                    </tbody>
+	                </table>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	
+	<div>
+  <div class="main-con">
+    <div class="l-content01">
+      <div class="pj-box">
+        <div class="pj-title">
+          <span class="fw-600">스마트폰</span>
+          <br />
+          <span class="fc-17 fs-21 fw-500">관리 번호 : A021</span>
+          <br />
+           <span class="fc-17 fs-21 fw-500">
+           출원 번호 : </span>
+          <br />
+          <span class="fc-17 fs-21 fw-500">발명자 : 코리아이이티</span>
+          <br />
+          <div class="btn-box mb-12">
+          <input class="mr-12" type="button" value="변경" onclick="location.href='/editPtMove?project_id=A021'" />
+          
+      	<input type="button" value="수정" onclick="location.href='/editProject?project_id=A021'" />
+      	<input type="button" class="ml-10" value="삭제" onclick="location.href='/deleteProject?project_id=A021'" />
+      	
+      	
+      	
+      	<button type="button" onclick="ptapproval('1')">발명승인</button>
+      	<input type="hidden" id="project_id" value="A021" />
+		<button class="ml-10" type="button" onclick="ptapproval('2')">발명반려</button>
+		
+      	</div>
+        </div>
+        <div class="pj-body">
+          <pre class="pl-12 pr-12 rcontent-box">[발명명칭]  
+스마트폰의 사용자 인터페이스 개선을 위한 시스템 및 방법
+
+[발명설명]  
+본 발명은 스마트폰의 사용자 인터페이스(UI)를 개선하기 위한 시스템 및 방법에 관한 것으로, 사용자의 사용 패턴을 분석하여 개인화된 인터페이스를 제공함으로써 사용자의 편의성을 극대화하는 기술에 관한 것이다. 본 발명은 스마트폰의 터치스크린, 음성 인식, 그리고 인공지능(AI) 기술을 결합하여 보다 직관적이고 사용자 친화적인 경험을 제공하는 것을 목적한다.
+
+[기술분야]  
+본 발명은 스마트폰 및 모바일 기기에 관련된 기술 분야에 해당하며, 특히 사용자 인터페이스 및 사용자 경험(UX) 개선에 관한 기술에 속한다.
+
+[배경기술]  
+기존의 스마트폰 사용자 인터페이스는 일반적으로 모든 사용자에게 동일한 형태로 제공된다. 그러나 사용자의 선호도와 행동 패턴은 각기 다르므로, 동일한 인터페이스가 모든 사용자에게 최적의 경험을 제공하지 못하는 문제가 있다. 또한, 기존의 스마트폰은 사용자의 피드백을 실시간으로 반영하는 시스템이 부족하여 사용자 경험이 제한적이다. 이러한 문제점을 해결하기 위해, 개인화된 사용자 인터페이스를 제공하는 기술의 필요성이 대두되고 있다.
+
+[발명내용]  
+본 발명은 다음과 같은 주요 구성 요소로 이루어진다:
+
+1. **사용자 행동 분석 모듈**: 사용자의 터치, 음성 명령 및 애플리케이션 사용 패턴을 수집하고 분석하여 사용자의 선호도를 파악하는 모듈이다. 이 모듈은 머신러닝 알고리즘을 이용하여 시간이 지남에 따라 사용자 맞춤형 데이터를 생성한다.
+
+2. **인터페이스 개인화 모듈**: 분석된 데이터를 바탕으로 사용자에게 최적화된 인터페이스를 실시간으로 제공하는 모듈이다. 예를 들어, 자주 사용하는 애플리케이션을 홈 화면에 배치하거나, 사용자가 선호하는 색상 및 테마를 자동으로 적용할 수 있다.
+
+3. **피드백 시스템**: 사용자가 인터페이스에 대한 피드백을 제공할 수 있는 인터페이스를 제공하며, 이를 통해 사용자 경험을 지속적으로 개선할 수 있도록 하는 시스템이다. 사용자의 피드백은 다시 행동 분석 모듈로 전달되어 개인화된 경험을 더욱 발전시킨다.
+
+이와 같은 구성 요소들을 통해 본 발명은 스마트폰 사용자에게 보다 직관적이고 편리한 인터페이스를 제공하여 사용자의 만족도를 높이는 데 기여할 수 있다. 본 발명은 또한 다양한 스마트폰 모델에 적용 가능하여, 시장에서의 경쟁력을 강화하는 데도 도움을 줄 것이다.</pre>
+        </div>
+        <div class="pj-file-container">
+          <div class="pj-file-header">
+            <span class="fc-222 fs-18 fw-600">📂 첨부파일</span>
+          </div>
+          
+
+        </div>
+        <form class="pj-file-form" name="fileFrm" action="/fileAdd" method="post" enctype="multipart/form-data">
+          <div class="pj-file-upload">
+            <input class="add-file-btn" type="button" value="파일 추가  ➕" onclick="addFile(this)" />
+            <input type="hidden" name="project_id" value="A021" />
+          </div>
+          <input class="upload-btn mt-36" type="submit" value="📤  업로드" />
+        </form>
+      </div>
+    </div>
+   		 <!-- 댓글 -->
+		<div class="c-content02">
+		    <form name="replyFrm" action="/reply" method="post" class="reply-wrapper" id="replyForm" onsubmit="return false;">
+		        <div class="reply-form">
+		            <div class="form-header">
+		                <span class="reply-texthe">Commentary</span>
+		            </div>
+		            <div class="form-body">
+		                <div class="input-group">
+		                    <textarea name="comment" class="comment-input" placeholder="내용을 입력해주세요"></textarea>
+		                    <input type="hidden" name="project_id" value="A021" />
+		                    <input type="hidden" name="member_id" value="aaa" />
+		                </div>
+		                <div class="submit-group">
+		                    <input type="button" value="등록" class="submit-button" onclick="submitReply()" />
+		                </div>
+		            </div>
+		        </div>
+		
+		        <div class="reply-list">
+		            <div class="reply-header">
+		            	<div class="reply-text">
+		            	 <span class="pinboard material-symbols-rounded mr-6">pinboard</span>
+		            	 <span>List</span>
+		            	</div> 
+		            </div>
+		            <div class="replies">
+		                
+		            </div>
+		        </div>
+		    </form>
+		</div>
+
+    	</div>
+    </div>
+	
+	<footer>
+	      <h3>IPR SOLUTION System©</h3>
+	</footer>
+
+</body></html>
