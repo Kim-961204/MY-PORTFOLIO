@@ -1,14 +1,14 @@
 <!--  This landing page has been captured by Landing Page Ripper Chrome extension developed by thelanders.club. If you want to get this lander cleaned, visit thelanders.club -->
 <!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head>
 <meta charset="UTF-8" />
-<link rel="stylesheet" href="readPost/style0.css" />
-<link rel="stylesheet" href="readPost/style1.css" />
-<link rel="stylesheet" href="readPost/style2.css" />
-<link rel="stylesheet" href="readPost/style3.css" />
-<script src="readPost/script0.js"></script>
-<script src="readPost/script1.js"></script>
-<link rel="stylesheet" href="readPost/style4.css" />
-<link rel="stylesheet" href="readPost/style5.css" />
+<link rel="stylesheet" href="editPost/style0.css" />
+<link rel="stylesheet" href="editPost/style1.css" />
+<link rel="stylesheet" href="editPost/style2.css" />
+<link rel="stylesheet" href="editPost/style3.css" />
+<script src="editPost/script0.js"></script>
+<script src="editPost/script1.js"></script>
+<link rel="stylesheet" href="editPost/style4.css" />
+<link rel="stylesheet" href="editPost/style5.css" />
 </head>
 <body>
 <!-- 현재 로그인한 사용자 정보를 JavaScript에서 사용하기 위한 hidden input -->
@@ -59,7 +59,7 @@
               <li class="fs-16 menu-box fc-fff"><a href="board.html">공지사항</a></li>
           </ul>
         </nav>
-         <div class="new-task" onclick="location.href='`writeProject.html'">+ 발명등록</div>
+         <div class="new-task" onclick="location.href='writeProject.html'">+ 발명등록</div>
     	</div>
     </div>
 	
@@ -96,23 +96,29 @@
  <div class="all-section">
   <div class="main-disp">
     <div class="main-con">
-      <div class="c-content02">
-      	<div class="center-con mt-40">
-      	 <div class="mb-20 align-center">
-      		<span class="fs-42 fw-600 fc-1B">IPR SOLUTION 프로그램</span>
-     		 </div>
+      <div class="c-content02 mb-24">
+      <div class="center-con mt-40">
+      	<div class="mb-20 align-center">
+      		<span class="fs-42 fw-600 fc-1B">게시글</span>
+     		</div>
         <!-- 게시판 폼 시작 -->
         <div class="signup-wrapper">
-          <form class="signup-form" name="readPost">
+          <form class="signup-form" name="editPost" action="savePost" method="post">
             <!-- 글번호 입력 필드 -->
             <div class="info-box">
-            <label for="post_no">특허번호</label>
+            <label for="post_no">글번호</label>
             <span id="post_no" readonly="">1</span>
             </div>
             
+            <!-- 제목 입력 필드 -->
+            <div class="info-box">
+            <label for="title">제목</label>
+            <input type="text" name="title" value="IPR SOLUTION 프로그램" />
+      			</div>
+      			
       			 <!-- 내용 입력 필드 -->
             <div class="info-box">
-            <label for="content">발명내용</label>
+            <label for="content">내용</label>
             <textarea class="content-box" name="content">특허프로그램</textarea>
       			</div>
       			
@@ -131,16 +137,16 @@
              <!-- 조회수 입력 필드 -->
             <div class="info-box">
             <label for="hit_no">조회수</label>
-            <span readonly="">40</span>
+            <span readonly="">43</span>
       			</div>       
             
             <!-- 가입 버튼 -->
-            <input type="button" class="button mt-20" value="수정" onclick="location.href='editPost.html'" />
+            <input type="hidden" name="post_no" value="1" />
+            <input type="submit" class="button mt-20" value="저장" />
             <input type="button" class="button" value="삭제" onclick="location.href='/deletePost?post_no=1'" />
-            <input type="button" class="button" value="목록" onclick="location.href='board'" />
           </form>
         </div>
-      </div>
+        </div>
       </div>
     </div>
    </div>
