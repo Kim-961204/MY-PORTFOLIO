@@ -128,7 +128,7 @@
                             <option value="3">특허명</option>
                         </select>
                         <input type="text" name="keyword" value="" />
-                        <input type="button" value="검색" onclick="searchckk()" />
+                        <input type="button" value="검색" onclick="location.href='#'" />
                         <!-- <select name="recordSize" onchange="viewIndex()">
                             <option value="10" th:selected="${search.recordSize == 10}">10개</option>
                             <option value="20" th:selected="${search.recordSize == 20}">20개</option>
@@ -358,14 +358,14 @@
 
                         <!-- 페이지 번호 -->
                         <li class="page_item">
-                            <a class="page_link_bold" href="/index/1?searchType=null&keyword=null&recordSize=10">1</a>
+                            <a class="page_link_bold" href="#">1</a>
 
                             
                         </li>
                         <li class="page_item">
                             
 
-                            <a class="page_link" href="/index/2?searchType=null&keyword=null&recordSize=10">2</a>
+                            <a class="page_link" href="#">2</a>
                         </li>
 
                         <!-- 다음 페이지 링크 -->
@@ -492,7 +492,7 @@
                  <input type="hidden" name="member_id" value="aaa" />
                  <input type="hidden" id="memo_date" name="memo_date" value="" />
                     <div class="submit-group">
-		            <input type="button" value="저장" class="submit-button" onclick="submitReply()" />
+		            <input type="button" value="저장" class="submit-button" onclick="location.href='#'" />
 		            </div>
 		             <div class="reply-list">
 		            <div class="reply-header">

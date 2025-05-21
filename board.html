@@ -106,8 +106,8 @@
           <option value="3">제목+ 내용</option>
          </select>
          <input type="text" name="keyword" value="" />
-         <input type="submit" value="검색" />
-         <select name="recordSize" onchange="viewRecCnt()">
+         <input type="button" value="검색" onclick="location.href='#'" />
+         <select name="recordSize" onchange="location.href='#'">
           <option value="10" selected="selected">10개</option>
           <option value="20">20개</option>
           <option value="50">50개</option>
@@ -134,13 +134,13 @@
 				</tr>
        </tbody></table>
        <div class="write-box mt-16">
-       		<input type="button" value="글쓰기" onclick="location.href='/writePost'" />
+       		<input type="button" value="글쓰기" onclick="location.href='#'" />
        </div>
       <div class="page-box">
         <ul class="page">
           
           <li class="page_item">
-						<a class="page_link_bold" href="/board/1?searchType=null&keyword=null&recordSize=10">1</a>
+						<a class="page_link_bold" href="board.html">1</a>
 						
 						</li>
 						
