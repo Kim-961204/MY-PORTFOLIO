@@ -100,7 +100,7 @@
       
         <!-- 회원가입 폼 시작 -->
         <div class="signup-wrapper">
-          <span class="mb-24 fs-24 fw-600 fc-1B">직급 등록</span>
+          <span class="mb-24 fs-24 fw-600 fc-1B">권한 등록</span>
           <form class="signup-form" name="frmJoinLeader" action="joinleader" method="post">
             <!-- 이름 입력 필드 -->  
             <div class="mname-box fs-18 fw-400 fc-1B">
@@ -116,13 +116,13 @@
 
             <select name="position_id">
              <option value="">직급선택</option>
-             <option value="0">CEO</option>
-             <option value="1">TEAMLEADER</option>
-             <option value="2">TEAMMEMBER</option>
+            <option value="0">관리자</option>
+            <option value="1">변리사</option>
+            <option value="2">발명자</option>
             </select>
 
             <!-- 가입 버튼 -->
-            <input type="button" id="button" value="등록하기" onclick="location.href='#'" />
+            <input type="button" id="button" value="등록하기" onclick="ckJfrm()" />
           </form>
         </div>
         <!-- 회원가입 폼 끝 -->
