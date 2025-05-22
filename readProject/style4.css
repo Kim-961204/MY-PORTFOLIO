@@ -177,33 +177,35 @@
 }
 
 .btn-box input[type="button"][value="수정"] {
-  background-color: #1B68E4; /* 포인트 컬러로 버튼 배경 색상 */
-  color: white;
-  padding: 4px 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  height: 34px;
+   background: #e0f7fa;
+     color: #4e5ed5;
+    border: 2px solid #616cc5;
+      border-radius: 6px;
+      font-weight: bold;
+      margin-right: 20px;
+      transition: background 0.2s;
+      height: 42px;
+      width: 70px;
 }
 
 .btn-box input[type="button"][value="수정"]:hover {
-  background-color: #155db6; /* 버튼 호버 시 어두운 블루 색상 */
+ background: #b2ebf2;
 }
 
 .btn-box input[type="button"][value="삭제"] {
-  background-color: #ff002d; /* 포인트 컬러로 버튼 배경 색상 */
-  color: white;
-  padding: 4px 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  height: 34px;
+ background: #fff0f0;
+      color: #d32f2f;
+      border: 2px solid #d32f2f;
+      border-radius: 6px;
+      font-weight: bold;
+      margin-right: 20px;
+      transition: background 0.2s;
+      height: 42px;
+      width: 70px;
 }
 
 .btn-box input[type="button"][value="삭제"]:hover {
-  background-color: #d50f32; 
+  background: #ffd6d6;
 }
 
 .do-btn {
